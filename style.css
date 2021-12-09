@@ -1,0 +1,99 @@
+@charset"utf-8";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+}
+
+html,body{
+				min-height: 100vh;
+				background: #b1b1b1;
+				font-family: var(--fonte1);
+}
+:root{
+			  --fonte1: Verdana,geneva,tahoma, sans-serif;
+			  --fonte2: 'Passion One', cursive;
+			  --fonte3: 'Sriracha', cursive;
+}
+
+header{
+				background: Black;
+				color: white;
+				text-align: center;
+}
+
+header > h1{
+				padding-top: 50px;
+				font-variant: small-caps;
+				font-family: var(--fonte2);
+				font-size: 10vw;
+}
+
+header > p{
+				padding-bottom: 50px;
+}
+
+section{
+       padding-top: 10vh;
+       padding-bottom: 10vh;
+       line-height: 2em;
+       padding-left: 30px;
+				font-family: var(--fonte3);
+				font-size: 3.5vw;
+}
+
+
+section.normal{
+				background: white;
+}
+
+section.normal > p{
+				padding-bottom: 3vh;
+}
+
+section.imagem > p{
+       display: inline-block;
+       padding: 5px;
+       text-shadow: 1px 1px 0px Black;
+				background: rgba(0,0,0,0.255);
+}
+
+section.imagem{
+       box-shadow: inset 6px 6px 13px 0px rgba(0,0,0,0.473);
+				color: white;
+				
+				background-size: cover;
+				background-repeat: no-repeat;
+				
+				background-attachment: fixed;
+}
+
+#img1{
+				background-image: url("imagens/Joaninha.jpg");
+				background-position: right center;
+}
+
+#img2{
+				background-image: url("imagens/Papel.jpg");
+				background-position: left center;
+}
+header a,footer a{
+				text-decoration: none;
+				font-weight: bolder;
+				color: white;
+}
+header a:hover, footer a:hover{
+				text-decoration: underline;
+}
+
+footer{
+				background: Black;
+				color: white;
+				text-align: center;
+				padding: 10px;
+}
